@@ -4,10 +4,17 @@ public class Policy {
     private PolicyObject policyObjects = new PolicyObject();
     private Risks risks = new Risks();
     private InsuredSum insuredSum = new InsuredSum();
+    private int sum = insuredSum.getSumInsuredFireTV() + insuredSum.getSumInsuredWaterTV() + insuredSum.getSumInsuredFireFlat() + insuredSum.getSumInsuredWaterFlat();
+    private String policySum = String.valueOf(sum);
 
-    void run() {
-        System.out.println(5);
+    public String getPolicySum() {
+        return policySum;
     }
+
+    public void setPolicySum(String policySum) {
+        this.policySum = policySum;
+    }
+
     public Risks getRisks() {
         return risks;
     }
@@ -24,7 +31,7 @@ public class Policy {
         this.insuredSum = insuredSum;
     }
 
-    public PolicyObject getPolicyObjects() {
+    PolicyObject getPolicyObjects() {
         return policyObjects;
     }
 
@@ -32,7 +39,7 @@ public class Policy {
         this.policyObjects = policyObjects;
     }
 
-    public String getPolicyNumber() {
+    String getPolicyNumber() {
         return policyNumber;
     }
 
@@ -40,7 +47,7 @@ public class Policy {
         this.policyNumber = policyNumber;
     }
 
-    public String getPolisyStatus() {
+    String getPolisyStatus() {
         return polisyStatus;
     }
 
@@ -56,6 +63,8 @@ public class Policy {
                 ", policyObjects=" + policyObjects +
                 ", risks=" + risks +
                 ", insuredSum=" + insuredSum +
+                ", sum=" + sum +
+                ", policySum='" + policySum + '\'' +
                 '}';
     }
 }
