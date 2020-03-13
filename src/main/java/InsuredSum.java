@@ -1,16 +1,24 @@
 public class InsuredSum {
 
-    private Integer sumInsuredFireTV= 100;
+    private Integer sumInsuredFireTV = 100;
     private Integer sumInsuredWaterTV = 8;
     private Integer sumInsuredWaterFlat = 100;
     private Integer sumInsuredFireFlat = 500;
+    private double differentInsuredSum;
 
+    public double getDifferentInsuredSum() {
+        return differentInsuredSum;
+    }
 
-    public Integer getSumInsuredFireTV() {
+    public void setDifferentInsuredSum(double differentInsuredSum) {
+        this.differentInsuredSum = differentInsuredSum;
+    }
+
+    Integer getSumInsuredFireTV() {
         return sumInsuredFireTV;
     }
 
-    public Integer getSumInsuredWaterTV() {
+    Integer getSumInsuredWaterTV() {
         return sumInsuredWaterTV;
     }
 
@@ -29,6 +37,7 @@ public class InsuredSum {
                 ", sumInsuredWaterTV=" + sumInsuredWaterTV +
                 ", sumInsuredWaterFlat=" + sumInsuredWaterFlat +
                 ", sumInsuredFireFlat=" + sumInsuredFireFlat +
+                ", differentInsuredSum=" + differentInsuredSum +
                 '}';
     }
 }
