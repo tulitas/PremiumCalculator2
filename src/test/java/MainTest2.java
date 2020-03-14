@@ -4,13 +4,15 @@ import static org.junit.Assert.*;
 
 public class MainTest2 {
     Main main = new Main();
+
+
     @Test
-    public void main() {
+    public void ok() {
 
     }
 
     @Test
-    public void testMain() {
+    public void main() {
     }
 
     @Test
@@ -19,6 +21,5 @@ public class MainTest2 {
 
     @Test
     public void menu() {
-
     }
 }

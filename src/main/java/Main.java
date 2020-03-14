@@ -4,6 +4,11 @@ import java.util.Scanner;
 
 public class Main {
 
+    public int ok(int x, int y) {
+
+        return x + y;
+    }
+
     private static Scanner input = new Scanner(System.in);
     private static Policy policy = new Policy();
     private static Risks risks = new Risks();
