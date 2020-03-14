@@ -7,7 +7,7 @@ public class Policy {
     private int sum = insuredSum.getSumInsuredFireTV() + insuredSum.getSumInsuredWaterTV() + insuredSum.getSumInsuredFireFlat() + insuredSum.getSumInsuredWaterFlat();
     private String policySum = String.valueOf(sum);
 
-    public String getPolicySum() {
+    String getPolicySum() {
         return policySum;
     }
 

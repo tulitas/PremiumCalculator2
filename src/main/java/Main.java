@@ -16,7 +16,7 @@ public class Main {
         infoCheck();
     }
 
-    private static void infoCheck() {
+    public static void infoCheck() {
 
         System.out.println("Policy Nr.: " + policy.getPolicyNumber());
         System.out.println("Policy status: " + policy.getPolisyStatus());
@@ -27,7 +27,7 @@ public class Main {
 
     }
 
-    private static void menu() {
+     static void menu() {
 
         System.out.println("To look details for FLAT input 1 and press ENTER");
         System.out.println("To look details for TV input 2 and press ENTER");
@@ -57,7 +57,7 @@ public class Main {
 
 
         } catch (InputMismatchException e) {
-            input.next();
+            String num = input.next();
             System.out.println("*!! Only 1 or 4 !!*");
             System.out.println("---------------------");
             menu();
@@ -173,4 +173,7 @@ public class Main {
         System.out.println("------------------------------");
         menu();
     }
+
+
+
 }
